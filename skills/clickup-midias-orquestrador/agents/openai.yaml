@@ -1,0 +1,11 @@
+interface:
+  display_name: "ClickUp Mídias — Orquestrador"
+  short_description: "Orquestra ClickUp, mídia paga e Panorama"
+  brand_color: "#2563EB"
+  default_prompt: "Use $clickup-midias-orquestrador para registrar e encaminhar esta atualização da operação de mídia paga no ClickUp."
+
+policy:
+  allow_implicit_invocation: true
+
+
+
