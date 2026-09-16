@@ -1,0 +1,32 @@
+{
+  "name": "agencia-ia-clickup",
+  "version": "1.0.0",
+  "description": "Processos e skills da operação de mídia paga da agência, com ClickUp como fonte oficial de contexto.",
+  "author": {
+    "name": "Agência",
+    "email": "gabrielaippsouza19@gmail.com",
+    "url": "https://github.com/gabrielaippsouza19-web"
+  },
+  "homepage": "https://github.com/gabrielaippsouza19-web/agencia-ia-clickup",
+  "repository": "https://github.com/gabrielaippsouza19-web/agencia-ia-clickup",
+  "license": "UNLICENSED",
+  "keywords": ["clickup", "midia-paga", "operacao", "squads", "agencia"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agência IA + ClickUp",
+    "shortDescription": "Orquestração da operação de mídia paga",
+    "longDescription": "Organiza squads, clientes, tarefas, responsabilidades, contexto e registros de execução da operação de mídia paga usando o ClickUp como fonte oficial.",
+    "developerName": "Agência",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://github.com/gabrielaippsouza19-web/agencia-ia-clickup",
+    "privacyPolicyURL": "https://github.com/gabrielaippsouza19-web/agencia-ia-clickup",
+    "termsOfServiceURL": "https://github.com/gabrielaippsouza19-web/agencia-ia-clickup",
+    "defaultPrompt": [
+      "Qual é minha agenda operacional no ClickUp hoje?",
+      "Organize esta demanda e indique o responsável correto.",
+      "Registre esta atualização no cliente certo após minha confirmação."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
