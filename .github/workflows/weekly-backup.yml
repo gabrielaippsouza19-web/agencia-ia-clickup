@@ -15,6 +15,50 @@ jobs:
 
     steps:
       - name: Baixar histórico completo
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Validar pacote
+        run: python scripts/validate_package.py
+
+      - name: Criar tag de backup
+        shell: bash
+        run: |
+          set -euo pipefail
+          BACKUP_TAG="backup-$(date -u +%F)"
+          if git rev-parse --verify "refs/tags/${BACKUP_TAG}" >/dev/null 2>&1; then
+            echo "A tag ${BACKUP_TAG} já existe; nenhum novo commit será criado."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "${BACKUP_TAG}" -m "Backup semanal do pacote Agência IA + ClickUp"
+          git push origin "${BACKUP_TAG}"
+          echo "Backup criado: ${BACKUP_TAG}"
+
+name: Validar e gerar backup semanal
+
+on:
+  schedule:
+    # Segunda-feira às 08:00 no horário de São Paulo (11:00 UTC).
+    - cron: "0 11 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar histórico completo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
