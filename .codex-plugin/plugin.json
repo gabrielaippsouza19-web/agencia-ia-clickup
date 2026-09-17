@@ -1,6 +1,6 @@
 {
   "name": "agencia-ia-clickup",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Processos e skills da operação de mídia paga da agência, com ClickUp como fonte oficial de contexto.",
   "author": {
     "name": "Agência",
@@ -30,3 +30,4 @@
     "brandColor": "#2563EB"
   }
 }
+
