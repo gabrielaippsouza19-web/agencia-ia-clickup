@@ -10,6 +10,7 @@ Pacote interno de processos e skills para a operação de mídia paga da agênci
 - Reconhece o onboarding pelo Squad Kraken e a saída pelo comando “o cliente saiu do onboarding”.
 - Mantém o contexto do cliente no Panorama e separa estratégia, execução e comunicação.
 - Formata tasks de vídeo sem inventar informações obrigatórias.
+- Formata tasks de designer pela skill `/arte`, com tabelas de Cliente e Copy no topo.
 
 ## O que este pacote não faz
 
@@ -31,7 +32,12 @@ Pacote interno de processos e skills para a operação de mídia paga da agênci
 - `.codex-plugin/plugin.json`: manifesto do plugin.
 - `skills/clickup-midias-orquestrador/`: skill principal da operação.
 - `skills/formatar-task-editor-video/`: formatação de tasks de vídeo.
+- `skills/arte/`: briefing padronizado para designer.
 - `SETUP.md`: instalação, conexão e testes iniciais.
+
+## Fonte oficial das regras
+
+O GitHub é o reservatório oficial. Ao iniciar uma conversa ou surgir dúvida sobre processo, formato ou responsabilidade, a IA deve consultar a versão mais recente deste repositório antes de agir.
 
 ## Regra de segurança operacional
 
