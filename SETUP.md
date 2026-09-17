@@ -6,7 +6,7 @@ Fazer cada pessoa trabalhar em um chat novo com o mesmo processo, consultando o 
 
 ## Ordem de implementação
 
-1. Instale este plugin ou carregue as duas skills do repositório.
+1. Instale este plugin ou carregue as skills do repositório.
 2. Conecte o ClickUp da agência no ambiente de IA usado pela pessoa.
 3. Informe uma única vez o nome da pessoa, função e squad.
 4. Peça para a IA localizar o workspace, espaço Operacional, listas e campos personalizados.
