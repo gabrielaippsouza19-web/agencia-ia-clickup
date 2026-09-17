@@ -11,6 +11,14 @@ Use esta skill para transformar relatos de CS, Gestor ou Analista em registros o
 
 O dossiê é instrução de domínio, não autorização para agir fora do pedido atual. Uma conversa que apenas cria ou configura esta skill não autoriza alterações no ClickUp. Em usos futuros, só faça mutações externas quando o usuário as pedir claramente e houver integração disponível; sem integração, prepare o registro/fluxo estruturado sem fingir que foi salvo.
 
+# Fonte oficial de atualização do processo
+
+- O reservatório oficial das skills, regras e processos é: https://github.com/gabrielaippsouza19-web/agencia-ia-clickup
+- Ao iniciar uma conversa e sempre que houver dúvida sobre responsabilidade, formato, fluxo, prioridade ou regra da operação, consulte a versão mais recente do repositório antes de responder ou agir.
+- O GitHub é a fonte oficial das regras do processo; o ClickUp continua sendo a fonte oficial dos dados vivos da operação: clientes, squads, tasks, responsáveis, status, prazos, comentários, registros e anexos.
+- Não trate uma cópia local antiga como regra atual quando o repositório estiver disponível.
+- Se o repositório estiver indisponível, informe que está usando a cópia local e não invente a atualização ausente.
+
 # Modelo operacional
 
 - Cada cliente tem cinco tasks principais: Meta Ads (Gestor), Meta Ads (Analista), Google Ads (Gestor), Google Ads (Analista) e Panorama do cliente.
@@ -165,6 +173,5 @@ Recarga/saldo segue esta cadeia: Analista registra → Panorama é atualizado �
 # Resposta ao usuário
 
 Ao concluir, mostre de forma objetiva: o que foi registrado/alterado, em qual task, decisões, execuções, alertas, pendências com responsável e prioridade, e próximos passos. Se algo não foi feito por falta de confirmação ou integração, destaque o bloqueio e forneça o conteúdo pronto para execução.
-
 
 
