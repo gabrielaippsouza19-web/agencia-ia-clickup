@@ -33,11 +33,19 @@ Pacote interno de processos e skills para a operação de mídia paga da agênci
 - `skills/clickup-midias-orquestrador/`: skill principal da operação.
 - `skills/formatar-task-editor-video/`: formatação de tasks de vídeo.
 - `skills/arte/`: briefing padronizado para designer.
+- `.agents/plugins/marketplace.json`: catálogo para importação e sincronização do plugin.
+- `.github/workflows/weekly-backup.yml`: validação e backup semanal por tag.
+- `CHANGELOG.md`: histórico de versões.
+- `scripts/validate_package.py`: validação local e do workflow.
 - `SETUP.md`: instalação, conexão e testes iniciais.
 
 ## Fonte oficial das regras
 
 O GitHub é o reservatório oficial. Ao iniciar uma conversa ou surgir dúvida sobre processo, formato ou responsabilidade, a IA deve consultar a versão mais recente deste repositório antes de agir.
+
+## Atualização automática
+
+O administrador do workspace pode importar `.agents/plugins/marketplace.json` a partir deste repositório. O marketplace passa a sincronizar atualizações diariamente. Além disso, toda segunda-feira às 08:00 (horário de São Paulo), o GitHub Actions valida o pacote e cria uma tag `backup-AAAA-MM-DD`.
 
 ## Regra de segurança operacional
 
