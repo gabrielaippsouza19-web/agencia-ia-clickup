@@ -1,0 +1,21 @@
+{
+  "name": "agencia-clickup",
+  "interface": {
+    "displayName": "Agência IA + ClickUp"
+  },
+  "plugins": [
+    {
+      "name": "agencia-ia-clickup",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
+
